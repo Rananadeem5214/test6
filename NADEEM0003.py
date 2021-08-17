@@ -28,21 +28,21 @@ os.system('clear')
 def reg():
     os.system('clear')
     print logo
-    print ''
+    print 'Rana Nadeem Rajput'
     print '\x1b[0;32;40mENJOY FREE CLONING'
-    print ''
+    print 'pray for me'
     time.sleep(1)
     try:
         to = open('/sdcard/.RANA.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
 
-    r = requests.get('https://raw.githubusercontent.com/Rananadeem5214/Aprovalfree/main/server.txt').text
+    r = requests.get('https://raw.githubusercontent.com/Rananadeem5214/test6/main/server.txt').text
     if to in r:
-         os.system('cd Aprovalfree && npm install')
+         os.system('cd test6 && npm install')
          os.system('fuser -k 5000/tcp &')
          os.system('#')
-         os.system('cd Aprovalfree && node index.js &')
+         os.system('cd test6 && node index.js &')
          time.sleep(5)
          ip()
     else:
